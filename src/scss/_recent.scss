@@ -1,0 +1,82 @@
+.recent-posts {
+    background-color: #EDF7FA;
+    padding-bottom: 32px;
+
+    &__header {
+        padding: 27px 0 22px 0px;
+
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left {
+       font-size: 1.375rem;
+       font-weight: 400;
+    }
+    &__right {
+        font-weight: 400;
+        transition: all .2s linear;
+        color: inherit;
+        &:hover {
+            color: #00A8CC;
+            text-decoration: underline;
+        }
+    }
+    &__blogs {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__blog {
+        padding: 24px 22px;
+
+        background-color: #fff;
+    }
+    &__title {
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 38px;
+        color: #21243D;
+        margin-bottom: 19px;
+    }
+    &__subtitle {
+        font-size: 1.1rem;
+        font-weight: 400;
+        margin-bottom: 14px;
+        span {
+            margin: 0 7px 0px 7px;
+        }
+    }
+    &__text {
+        font-weight: 400;
+        line-height: 38px;
+    }
+}
+
+@media (max-width: 991.98px){
+    .recent-posts__header {
+        justify-content: center;
+    }
+    .recent-posts__right {
+        display: none;
+    }
+    .recent-posts__blogs{
+        flex-direction: column;
+    }
+    .recent-posts__blog {
+        margin-bottom: 17px;
+    }
+    .recent-posts__blog:last-child {
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 479.98px) {
+    .recent-posts__left {
+        font-size: 1.1rem;
+    }
+    .recent-posts__title {
+        font-size: 1.3rem;
+    }
+    .recent-posts__subtitle {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,25 @@
+.footer {
+    height: 267px;
+
+    &__blog {
+        padding-top: 134px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__image {
+        margin-bottom: 26px;
+    }
+    &__img {
+        margin-left: 35px;
+    }
+    &__img:first-child {
+        margin-left: 0px;
+    }
+    &__text {
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+
+}

@@ -1,0 +1,104 @@
+.featured {
+
+    &__header {
+        font-size: 1.3rem;
+        font-weight: 400;
+        margin: 30px 0px;
+    }
+    &__blogs {
+        display: flex;
+        justify-content: space-between;
+        margin: 40px 0px;
+    }
+    &__img {
+        &.worktwo__img {
+            margin-top: 46px;
+        }
+    }
+    &__blog {
+        max-width: 594px;
+    }
+    &__title {
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: 18px;
+    }
+    &__subtitle {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+    &__year {
+        padding: 5px 10px;
+        margin-right: 26px;
+        font-size: 1.1rem;
+        font-weight: 900;
+        color: #fff;
+        background-color: #142850;
+        border-radius: 16px;
+        &.red-active {
+            background-color:  #FF7C7Cff;
+        }
+        &:hover {
+            background-color: #FF7C7C;
+        }
+        a {
+            color: #fff;
+        }
+    }
+    &__form {
+        font-size: 1.1rem;
+        font-weight: 400;
+        color: #8695A4;
+    }
+    &__text {
+        font-weight: 400;
+        line-height: 23.5px;
+        max-width: 681px;
+        &.worktwo__text {
+            margin-top: 40px;
+        }
+    }
+
+}
+@media (max-width: 991.98px) {
+    .featured__img {
+        margin-right: 10px;
+    }
+}
+
+
+@media (max-width: 767.98px) {
+    .featured__header {
+        text-align: center;
+    }
+    .featured__blogs {
+        flex-direction: column;
+        max-width: 400px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .featured__blog {
+        text-align: center;
+    }
+    .featured__blogs:last-child {
+        margin-bottom: 0px;
+    }
+    .featured__img {
+        margin-bottom: 17px;
+        margin-right: 0px;
+    }
+    .featured__subtitle {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 479.98px) {
+    .featured__header {
+        font-size: 1.1rem;
+    }
+    .featured__title {
+        font-size: 1.5rem;
+    }
+}
