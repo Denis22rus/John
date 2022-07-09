@@ -61,14 +61,14 @@
     }
 
 }
-@media (max-width: 991.98px) {
+@media (max-width: $md2) {
     .featured__img {
         margin-right: 10px;
     }
 }
 
 
-@media (max-width: 767.98px) {
+@media (max-width: $md3) {
     .featured__header {
         text-align: center;
     }
@@ -94,7 +94,7 @@
     }
 }
 
-@media (max-width: 479.98px) {
+@media (max-width: $md4) {
     .featured__header {
         font-size: 1.1rem;
     }

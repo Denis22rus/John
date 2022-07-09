@@ -3,7 +3,7 @@
     padding-bottom: 32px;
 
     &__header {
-        padding: 27px 0 22px 0px;
+        padding: 27px 0px 0px 0px;
 
         display: flex;
         justify-content: space-between;
@@ -23,12 +23,18 @@
     }
     &__blogs {
         display: flex;
+
         justify-content: space-between;
+
     }
     &__blog {
-        padding: 24px 22px;
+        max-width: 418px;
+        padding: 22px 10px 0px 10px;
 
+    }
+    &__article {
         background-color: #fff;
+        padding: 20px;
     }
     &__title {
         font-size: 1.6rem;
@@ -51,15 +57,16 @@
     }
 }
 
-@media (max-width: 991.98px){
+@media (max-width: $md2){
     .recent-posts__header {
         justify-content: center;
     }
     .recent-posts__right {
         display: none;
     }
-    .recent-posts__blogs{
-        flex-direction: column;
+    .recent-posts__blogs {
+        flex-wrap: wrap;
+        justify-content: center;
     }
     .recent-posts__blog {
         margin-bottom: 17px;
@@ -69,7 +76,7 @@
     }
 }
 
-@media (max-width: 479.98px) {
+@media (max-width: $md4) {
     .recent-posts__left {
         font-size: 1.1rem;
     }
